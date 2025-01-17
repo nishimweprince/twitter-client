@@ -70,7 +70,7 @@ export class PostService {
       try {
         logger.info(`Sending tweet`);
         response = await scraper.sendTweet(
-          status,
+          status.slice(0, 280),
           replyToTweetId,
           mediaData?.length
             ? mediaData?.map((media) => ({
