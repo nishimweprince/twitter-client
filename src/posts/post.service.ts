@@ -37,7 +37,7 @@ export class PostService {
     let response;
     logger.info(`Waiting for 1000 to 3000 seconds to avoid rate limiting`);
     await wait(1000, 3000);
-    logger.info(`Status length: ${status.length}`);
+    logger.info(`Status length: ${status?.length}`);
 
     if (
       status.length >

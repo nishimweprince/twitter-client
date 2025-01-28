@@ -26,7 +26,7 @@ const authenticateScraper = async () => {
     await scraper.login(
       process.env.TWITTER_USERNAME as string,
       process.env.TWITTER_PASSWORD as string,
-      process.env.TWITTER_EMAIL as string
+      process.env.TWITTER_EMAIL as string,
     );
     logger.success(`Logged in to Twitter`);
     return scraper;
